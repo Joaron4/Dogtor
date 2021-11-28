@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.dogtorpet.databinding.FragmentHomeBinding
 import com.example.dogtorpet.viewmodel.HomeViewModel
 
+
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
@@ -31,7 +32,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.textHomeUser
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

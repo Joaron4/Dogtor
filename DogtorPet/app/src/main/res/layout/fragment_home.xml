@@ -1,22 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".view.ui.fragments.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomappbar"
+        tools:ignore="UnknownIdInLayout"
+        >
+        <RelativeLayout
+            android:id="@+id/homeComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/textHomeUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/public_sans_bold"
+                android:text="Hola usuario,"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24dp"
+                />
+
+            <TextView
+                android:id="@+id/textHomeWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textHomeUser"
+                android:fontFamily="@font/public_sans_bold"
+                android:text="¿Qué necesitas hoy?"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/cardSideMargin"
+                android:layout_marginRight="@dimen/cardSideMargin"
+                android:layout_below="@id/textHomeWelcome"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/search_bar"
+                android:fontFamily="@font/public_sans_regular1"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:text="Qué estás buscando"
+                android:textColor="@color/primaryTextColor">
+
+            </TextView>
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="377dp"
+                android:layout_height="181dp"
+                android:layout_below="@id/searchView"
+                android:layout_marginLeft="@dimen/cardSideMargin"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/cardSideMargin"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp"
+                android:src="@drawable/cita" />
+            <LinearLayout
+                android:id="@+id/navBarProducts"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/imageButton3"
+
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nav_bar_products"
+                    android:fontFamily="@font/public_sans_bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_weight="1"
+                    android:text="Para ti"
+                    android:textSize="@dimen/textNavBarProducts"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nav_bar_products"
+                    android:fontFamily="@font/public_sans_bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_weight="1"
+                    android:text="Gatos"
+                    android:textSize="@dimen/textNavBarProducts"/>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nav_bar_products"
+                    android:fontFamily="@font/public_sans_bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_weight="1"
+                    android:text="Perros"
+                    android:textSize="@dimen/textNavBarProducts"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nav_bar_products"
+                    android:fontFamily="@font/public_sans_bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_weight="1"
+                    android:text="Hásmters"
+                    android:textSize="@dimen/textNavBarProducts"/>
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nav_bar_products"
+                    android:fontFamily="@font/public_sans_bold"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_weight="1"
+                    android:text="Medicna"
+                    android:textSize="@dimen/textNavBarProducts"/>
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/homeGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/navBarProducts"
+                android:columnCount="3"
+                android:padding="10dp"
+                android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"
+                        android:background="@drawable/cardbox">
+
+                        <ImageView
+                            android:id="@+id/productImage"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/imgHeight"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cita"
+                            app:layout_constraintBottom_toBottomOf="@id/productDescription"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/productDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:fontFamily="@font/public_sans_bold"
+                            android:padding="2dp"
+                            android:text="Producto"
+                            android:textColor="@color/primaryTextColor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/productImage" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="@font/public_sans_bold"
+                            android:padding="2dp"
+                            android:text="$300.000"
+                            android:textColor="@color/primaryTextColor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/productDescription" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"
+                        android:background="@drawable/cardbox">
+
+                        <ImageView
+                            android:id="@+id/productImage2"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/imgHeight"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cita"
+                            app:layout_constraintBottom_toBottomOf="@id/productDescription2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/productDescription2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:fontFamily="@font/public_sans_bold"
+                            android:padding="2dp"
+                            android:text="Producto"
+                            android:textColor="@color/primaryTextColor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/productImage2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="@font/public_sans_bold"
+                            android:padding="2dp"
+                            android:text="$300.000"
+                            android:textColor="@color/primaryTextColor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/productDescription2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"
+                        android:background="@drawable/cardbox">
+
+                        <ImageView
+                            android:id="@+id/productImage3"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/imgHeight"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cita"
+                            app:layout_constraintBottom_toBottomOf="@id/productDescription3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/productDescription3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:fontFamily="@font/public_sans_bold"
+                            android:padding="2dp"
+                            android:text="Producto"
+                            android:textColor="@color/primaryTextColor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/productImage3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="@font/public_sans_bold"
+                            android:padding="2dp"
+                            android:text="$300.000"
+                            android:textColor="@color/primaryTextColor"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/productDescription3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

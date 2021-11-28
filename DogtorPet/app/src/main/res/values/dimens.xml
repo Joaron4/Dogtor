@@ -2,4 +2,11 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cardSideMargin">8dp</dimen>
+    <dimen name="cardBottomMargin">12dp</dimen>
+    <dimen name="cardElevation">2dp</dimen>
+    <dimen name="imgHeight">90dp</dimen>
+    <dimen name="defaultMargin">16dp</dimen>
+    <dimen name="headerMargin">24dp</dimen>
+    <dimen name="textNavBarProducts">7dp</dimen>
 </resources>
