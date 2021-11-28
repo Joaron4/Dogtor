@@ -26,7 +26,17 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        val loading = LoadingDialog(this)
+        loading.startLoading()
+        val handler = Handler()
+        handler.postDelayed(object :Runnable{
+            override fun run() {
+                loading.isDismiss()
+            }
 
+        },5000)
 
         val navView: BottomNavigationView = binding.navView
 
