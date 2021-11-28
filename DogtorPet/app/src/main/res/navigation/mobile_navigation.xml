@@ -19,7 +19,8 @@
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.example.dogtorpet.view.ui.fragments.NotificationsFragment"
+        android:name="com.example.dogtorpet.view.ui.fragments.LoginFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_login" />
+
 </navigation>
