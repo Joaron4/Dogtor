@@ -2,7 +2,7 @@ package com.malkinfo.progressbar.uitel
 
 import android.app.Activity
 import android.app.AlertDialog
-import com.malkinfo.progressbar.R
+import com.example.dogtorpet.R
 
 class LoadingDialog(val mActivity:Activity) {
     private lateinit var isdialog:AlertDialog

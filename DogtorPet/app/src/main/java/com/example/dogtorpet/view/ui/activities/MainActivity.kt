@@ -13,8 +13,8 @@ import com.example.dogtorpet.R
 import com.example.dogtorpet.databinding.ActivityMainBinding
 import com.google.android.material.bottomappbar.BottomAppBar
 import android.graphics.drawable.GradientDrawable
-
-
+import android.os.Handler
+import com.malkinfo.progressbar.uitel.LoadingDialog
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val loading = LoadingDialog(this)
         loading.startLoading()

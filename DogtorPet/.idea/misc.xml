@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
         <entry key="..\:/Descargas/Dogtor/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Descargas/Dogtor/DogtorPet/app/src/main/res/layout/loading_item.xml" value="0.3625" />
         <entry key="..\:/MisionTIC/Ciclo4/Dogtor/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.11775362318840579" />
@@ -39,6 +38,10 @@
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/layout/activity_main.xml" value="0.44398340248962653" />
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/loading_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sfeli/Downloads/Dogtor-develop/DogtorPet/app/src/main/res/drawable/button_rounder_registro.xml" value="0.2203125" />
         <entry key="..\:/Users/sfeli/Downloads/Dogtor-develop/DogtorPet/app/src/main/res/drawable/buttonrounded.xml" value="0.2203125" />
         <entry key="..\:/Users/sfeli/Downloads/Dogtor-develop/DogtorPet/app/src/main/res/drawable/fondoarriba.xml" value="0.2203125" />
