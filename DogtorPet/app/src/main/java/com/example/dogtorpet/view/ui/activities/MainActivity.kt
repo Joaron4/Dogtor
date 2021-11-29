@@ -11,32 +11,25 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.dogtorpet.R
 import com.example.dogtorpet.databinding.ActivityMainBinding
+import com.example.dogtorpet.databinding.FragmentHomeBinding as homebinding
 import com.google.android.material.bottomappbar.BottomAppBar
 import android.graphics.drawable.GradientDrawable
-
-
+import android.widget.Button
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var homeBinding: homebinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val loading = LoadingDialog(this)
-        loading.startLoading()
-        val handler = Handler()
-        handler.postDelayed(object :Runnable{
-            override fun run() {
-                loading.isDismiss()
-            }
 
-        },5000)
+
 
         val navView: BottomNavigationView = binding.navView
 
@@ -58,7 +51,6 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
 
     }
 }
