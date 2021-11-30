@@ -90,52 +90,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="259dp"
+        android:layout_height="wrap_content"
         android:translationY="-43dp"
         app:srcCompat="@drawable/fondoarriba" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:background="@drawable/boton_partesuperiorlogin"
-        android:text="Favoritos"
-        android:translationY="117dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:background="@drawable/boton_partesuperiorlogin"
-        android:text="Perros"
-        android:translationY="117dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="205dp"
-        android:background="@drawable/boton_partesuperiorlogin"
-        android:text="Gatos"
-        android:translationY="117dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:background="@drawable/boton_partesuperiorlogin"
-        android:text="Juguetes"
-        android:translationY="117dp" />
-
-    <SearchView
-        android:layout_width="374dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:background="@drawable/button_rounder_registro"
-        android:translationY="55dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -143,6 +101,7 @@
         android:layout_height="wrap_content"
         android:text="¿YA TIENES UNA CUENTA?"
         android:layout_marginLeft="70dp"
+        android:fontFamily="@font/public_sans_bold"
         android:translationY="25dp"
         android:textSize="20dp"/>
 

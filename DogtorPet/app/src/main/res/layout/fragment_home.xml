@@ -44,7 +44,7 @@
                 android:textColor="@color/primaryTextColor"
                 android:textSize="24dp" />
 
-            <TextView
+            <SearchView
                 android:id="@+id/searchView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,11 +56,10 @@
                 android:background="@drawable/search_bar"
                 android:fontFamily="@font/public_sans_regular1"
                 android:textAlignment="center"
-                android:padding="10dp"
-                android:text="Qué estás buscando"
+                android:text="¿Qué estás buscando?"
                 android:textColor="@color/primaryTextColor">
 
-            </TextView>
+            </SearchView>
 
 
             <ImageButton
@@ -81,63 +80,113 @@
                 android:layout_height="40dp"
                 android:layout_below="@id/imageButton3"
 
-                android:orientation="horizontal"
                 >
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/nav_bar_products"
-                    android:fontFamily="@font/public_sans_bold"
-                    android:textColor="@color/primaryTextColor"
-                    android:layout_weight="1"
-                    android:text="Para ti"
-                    android:textSize="@dimen/textNavBarProducts"/>
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
+                    android:scrollbars="none"
+                    >
+                <RadioGroup
+                    android:id="@+id/nav_bar_button_group"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/nav_bar_products"
-                    android:fontFamily="@font/public_sans_bold"
-                    android:textColor="@color/primaryTextColor"
-                    android:layout_weight="1"
-                    android:text="Gatos"
-                    android:textSize="@dimen/textNavBarProducts"/>
+                    android:orientation='horizontal'
+                    android:layout_marginLeft="@dimen/cardSideMargin"
+                    android:layout_marginRight="@dimen/cardSideMargin"
+                    >
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/nav_bar_products"
-                    android:fontFamily="@font/public_sans_bold"
-                    android:textColor="@color/primaryTextColor"
-                    android:layout_weight="1"
-                    android:text="Perros"
-                    android:textSize="@dimen/textNavBarProducts"/>
+                    <RadioButton
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:checked="true"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Para ti"
+                        android:textAlignment="center"
+                        android:button="@android:color/transparent"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+                    <RadioButton
+                        android:id="@+id/button2"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Gatos"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"
+                        />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/nav_bar_products"
-                    android:fontFamily="@font/public_sans_bold"
-                    android:textColor="@color/primaryTextColor"
-                    android:layout_weight="1"
-                    android:text="Hásmters"
-                    android:textSize="@dimen/textNavBarProducts"/>
+                    <RadioButton
+                        android:id="@+id/button3"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Perros"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
 
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/nav_bar_products"
-                    android:fontFamily="@font/public_sans_bold"
-                    android:textColor="@color/primaryTextColor"
-                    android:layout_weight="1"
-                    android:text="Medicna"
-                    android:textSize="@dimen/textNavBarProducts"/>
+                    <RadioButton
+                        android:id="@+id/button4"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Hásmters"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+
+                    <RadioButton
+                        android:id="@+id/button5"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Medicinas"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+                    <RadioButton
+                        android:id="@+id/button6"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Juguetes"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+                </RadioGroup>
+                </HorizontalScrollView>
+
             </LinearLayout>
 
             <GridLayout

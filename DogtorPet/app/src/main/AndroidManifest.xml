@@ -11,7 +11,7 @@
         android:theme="@style/Theme.DogtorPet">
         <activity
             android:name=".view.ui.activities.SplashScreenActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".view.ui.activities.MainActivity"
             android:exported="true"

@@ -8,5 +8,6 @@
     <dimen name="imgHeight">90dp</dimen>
     <dimen name="defaultMargin">16dp</dimen>
     <dimen name="headerMargin">24dp</dimen>
-    <dimen name="textNavBarProducts">7dp</dimen>
+    <dimen name="textNavBarProducts">15dp</dimen>
+    <dimen name="NavBarSideMargin">15dp</dimen>
 </resources>

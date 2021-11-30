@@ -10,10 +10,14 @@
         <entry key="..\:/MisionTIC/Ciclo4/Dogtor/DogtorPet/app/src/main/res/layout/loanding_item.xml" value="0.1" />
         <entry key="..\:/MisionTIC/Ciclo4/Dogtor/DogtorPet/app/src/main/res/layout/progressbar_login.xml" value="0.20153985507246377" />
         <entry key="..\:/MisionTIC/Ciclo4/Repositorio/DogtorLogin/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/button_text_color_changer.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/circular_button.xml" value="0.21875" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/layout_bg.xml" value="0.125" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/logo_selector.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/nav_bar_products.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rad_bg_regular.xml" value="0.12962962962962962" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rad_bg_selected.xml" value="0.12962962962962962" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rad_bg_selector.xml" value="0.12962962962962962" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rounded_corners.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rounded_line.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/search_bar.xml" value="0.37864583333333335" />
@@ -21,6 +25,7 @@
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card_desc.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card_img.xml" value="0.22" />

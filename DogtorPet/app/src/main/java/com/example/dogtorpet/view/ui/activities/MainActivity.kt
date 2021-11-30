@@ -11,31 +11,26 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.dogtorpet.R
 import com.example.dogtorpet.databinding.ActivityMainBinding
+import com.example.dogtorpet.databinding.FragmentHomeBinding as homebinding
 import com.google.android.material.bottomappbar.BottomAppBar
 import android.graphics.drawable.GradientDrawable
-import android.os.Handler
-import com.malkinfo.progressbar.uitel.LoadingDialog
+import android.widget.Button
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var homeBinding: homebinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        setContentView(R.layout.activity_main)
-        val loading = LoadingDialog(this)
-        loading.startLoading()
-        val handler = Handler()
-        handler.postDelayed(object :Runnable{
-            override fun run() {
-                loading.isDismiss()
-            }
 
-        },5000)
+        setContentView(binding.root)
+
+
 
         val navView: BottomNavigationView = binding.navView
 
@@ -43,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         val botView: BottomAppBar = binding.bottomappbar
         botView.setBackgroundColor(Color.parseColor("#C5F9F9"))
-        
+
         //Color.parseColor("#C5F9F9")
 
 
