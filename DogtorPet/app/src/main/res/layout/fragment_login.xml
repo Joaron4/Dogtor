@@ -71,9 +71,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="33dp"
+        android:fontFamily="@font/public_sans_bold"
         android:text="Reestablecer contraseña"
-        android:translationY="390dp"
-        android:fontFamily="@font/public_sans_bold"/>
+        android:translationY="390dp" />
 
     <TextView
         android:id="@+id/textView3"
