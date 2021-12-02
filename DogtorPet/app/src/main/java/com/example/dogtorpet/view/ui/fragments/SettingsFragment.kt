@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.dogtorpet.databinding.FragmentDashboardBinding
 import com.example.dogtorpet.viewmodel.DashboardViewModel
 
-class DashboardFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
     private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentDashboardBinding? = null
