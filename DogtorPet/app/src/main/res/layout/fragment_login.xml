@@ -76,9 +76,8 @@
         android:gravity="center"
         android:text="INICIAR SESION"
         android:textColor="#2AE2E2"
-        android:textSize="25dp"
-        android:translationY="210dp"
-        />
+        android:textSize="23dp"
+        android:translationY="210dp" />
 
     <ImageView
         android:id="@+id/imageView"
