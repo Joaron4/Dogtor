@@ -64,15 +64,15 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="377dp"
+                android:layout_width="match_parent"
                 android:layout_height="181dp"
                 android:layout_below="@id/searchView"
                 android:layout_marginLeft="@dimen/cardSideMargin"
                 android:layout_marginTop="10dp"
-                android:scaleType="fitXY"
                 android:layout_marginRight="@dimen/cardSideMargin"
                 android:background="@drawable/rounded_corners"
                 android:padding="10dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/cita" />
             <LinearLayout
                 android:id="@+id/navBarProducts"
