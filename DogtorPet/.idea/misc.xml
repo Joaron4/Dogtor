@@ -26,6 +26,7 @@
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_product_detail.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/loading_item.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card.xml" value="0.22" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card_desc.xml" value="0.1" />
@@ -44,18 +45,6 @@
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/layout/activity_main.xml" value="0.44398340248962653" />
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/drawable/button_detail_producto.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/drawable/button_plus_and_less.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/drawable/button_rounder_registro.xml" value="0.2064814814814815" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/drawable/buttonrounded.xml" value="0.2064814814814815" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.10416666666666667" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/fragment_notifications.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/fragment_product_detail.xml" value="0.33" />
-        <entry key="..\:/Users/sfeli/Desktop/Dogtor-DP-50-Detalle-del-producto/DogtorPet/app/src/main/res/layout/products_card.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/sfeli/Desktop/Dogtor-develop/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
