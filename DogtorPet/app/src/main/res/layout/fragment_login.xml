@@ -6,15 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/design_default_color_on_primary">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingVertical="90dp"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:translationY="70dp"
-        app:srcCompat="@drawable/cuadro" />
+
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -85,12 +77,14 @@
         android:text="INICIAR SESION"
         android:textColor="#2AE2E2"
         android:textSize="25dp"
-        android:translationY="210dp" />
+        android:translationY="210dp"
+        />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
         android:translationY="-43dp"
         app:srcCompat="@drawable/fondoarriba" />
 
@@ -110,6 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="" />
+
 
 
 </RelativeLayout>
