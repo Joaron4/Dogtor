@@ -32,9 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     fun configNav() {
         val navView: BottomNavigationView = binding.navView
-
         navView.background = null
-
         val botView: BottomAppBar = binding.bottomappbar
         botView.setBackgroundColor(Color.parseColor("#C5F9F9"))
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
