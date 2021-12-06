@@ -10,4 +10,6 @@
     <dimen name="headerMargin">24dp</dimen>
     <dimen name="textNavBarProducts">15dp</dimen>
     <dimen name="NavBarSideMargin">15dp</dimen>
+    <dimen name="ProductGridSpacing">16dp</dimen>
+    <dimen name="ProductGridSpacingSmall">4dp</dimen>
 </resources>

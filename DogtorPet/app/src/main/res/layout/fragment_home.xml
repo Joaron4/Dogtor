@@ -189,180 +189,22 @@
 
             </LinearLayout>
 
-            <GridLayout
-                android:id="@+id/homeGrid"
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
+                android:layout_height="match_parent"
                 android:layout_below="@id/navBarProducts"
-                android:columnCount="3"
-                android:padding="10dp"
-                android:rowCount="3">
+                android:layout_marginTop="10dp"
+                android:paddingStart="@dimen/ProductGridSpacing"
+                android:paddingEnd="@dimen/ProductGridSpacing"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
 
-                    >
+            </androidx.core.widget.NestedScrollView>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/cardSideMargin"
-                        android:layout_marginLeft="@dimen/cardSideMargin"
-                        android:background="@drawable/cardbox">
-
-                        <ImageView
-                            android:id="@+id/productImage"
-                            android:layout_width="100dp"
-                            android:layout_height="@dimen/imgHeight"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/cita"
-                            app:layout_constraintBottom_toBottomOf="@id/productDescription"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/productDescription"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
-                            android:fontFamily="@font/public_sans_bold"
-                            android:padding="2dp"
-                            android:text="Producto"
-                            android:textColor="@color/primaryTextColor"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/productImage" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:fontFamily="@font/public_sans_bold"
-                            android:padding="2dp"
-                            android:text="$300.000"
-                            android:textColor="@color/primaryTextColor"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/productDescription" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-
-                    >
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/cardSideMargin"
-                        android:layout_marginLeft="@dimen/cardSideMargin"
-                        android:background="@drawable/cardbox">
-
-                        <ImageView
-                            android:id="@+id/productImage2"
-                            android:layout_width="100dp"
-                            android:layout_height="@dimen/imgHeight"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/cita"
-                            app:layout_constraintBottom_toBottomOf="@id/productDescription2"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/productDescription2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
-                            android:fontFamily="@font/public_sans_bold"
-                            android:padding="2dp"
-                            android:text="Producto"
-                            android:textColor="@color/primaryTextColor"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/productImage2" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:fontFamily="@font/public_sans_bold"
-                            android:padding="2dp"
-                            android:text="$300.000"
-                            android:textColor="@color/primaryTextColor"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/productDescription2" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-
-                    >
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/cardSideMargin"
-                        android:layout_marginLeft="@dimen/cardSideMargin"
-                        android:background="@drawable/cardbox">
-
-                        <ImageView
-                            android:id="@+id/productImage3"
-                            android:layout_width="100dp"
-                            android:layout_height="@dimen/imgHeight"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/cita"
-                            app:layout_constraintBottom_toBottomOf="@id/productDescription3"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/productDescription3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentTop="true"
-                            android:fontFamily="@font/public_sans_bold"
-                            android:padding="2dp"
-                            android:text="Producto"
-                            android:textColor="@color/primaryTextColor"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/productImage3" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:fontFamily="@font/public_sans_bold"
-                            android:padding="2dp"
-                            android:text="$300.000"
-                            android:textColor="@color/primaryTextColor"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/productDescription3" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-
-            </GridLayout>
 
         </RelativeLayout>
     </ScrollView>

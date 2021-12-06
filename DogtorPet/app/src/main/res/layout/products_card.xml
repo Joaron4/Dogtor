@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -21,48 +21,53 @@
         android:background="@drawable/cardbox"
         >
 
-        <ImageView
+
+        <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/productImage"
             android:layout_width="0dp"
             android:layout_height="@dimen/imgHeight"
             android:scaleType="fitXY"
-            android:src="@drawable/cita"
-            app:layout_constraintBottom_toBottomOf="@id/productDescription"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginRight="@dimen/cardSideMargin"
-            android:layout_marginLeft="@dimen/cardSideMargin"/>
-
-        <TextView
-            android:id="@+id/productDescription"
-            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/cardSideMargin"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:fontFamily="@font/public_sans_bold"
-            android:padding="2dp"
-            android:gravity="center_horizontal"
-            android:text="Producto"
-            android:textColor="@color/primaryTextColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/productImage" />
+            android:layout_marginStart="@dimen/ProductGridSpacingSmall"
+            android:layout_marginLeft="@dimen/ProductGridSpacing"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/productImage">
 
-        <TextView
-            android:id="@+id/ProductPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:fontFamily="@font/public_sans_bold"
-            android:padding="2dp"
-            android:text="$300.000"
-            android:gravity="center_horizontal"
-            android:textColor="@color/primaryTextColor"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/productDescription" />
+            <TextView
+                android:id="@+id/productDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/public_sans_bold"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:text="Producto"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
+            <TextView
+                android:id="@+id/ProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/public_sans_regular1"
+                android:padding="2dp"
+                android:text="$300.000"
+                android:gravity="center_horizontal"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>
