@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dogtorpet.R
 import com.example.dogtorpet.databinding.FragmentHomeBinding
@@ -59,7 +60,7 @@ class HomeFragment : Fragment(), ProductsListener {
         productsAdapter = ProductsAdapter(this)
 
         binding.rvProducts.apply {
-            layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
+            layoutManager = GridLayoutManager(view.context,3)
             adapter = productsAdapter
         }
 
@@ -73,7 +74,7 @@ class HomeFragment : Fragment(), ProductsListener {
 
         homeViewModel.isLoading.observe(viewLifecycleOwner, Observer<Boolean>{
             if (it != null)
-                binding.homeComponents.visibility = View.INVISIBLE
+                binding.homeComponents.visibility = View.VISIBLE
         })
     }
 

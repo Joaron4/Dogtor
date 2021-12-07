@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_rowWeight="1"
     android:layout_columnWeight="1"
+    app:cardCornerRadius="10dp"
     android:layout_marginStart="@dimen/cardSideMargin"
     android:layout_marginEnd="@dimen/cardSideMargin"
     android:layout_marginBottom="@dimen/cardBottomMargin"
@@ -17,7 +18,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/cardbox"
         >
 

@@ -12,4 +12,5 @@
     <dimen name="NavBarSideMargin">15dp</dimen>
     <dimen name="ProductGridSpacing">16dp</dimen>
     <dimen name="ProductGridSpacingSmall">4dp</dimen>
+    <dimen name="EndFragment">100dp</dimen>
 </resources>

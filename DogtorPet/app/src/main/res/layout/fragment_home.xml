@@ -196,6 +196,7 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:layout_below="@id/navBarProducts"
+            android:layout_marginBottom="@dimen/EndFragment"
             >
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvProducts"
