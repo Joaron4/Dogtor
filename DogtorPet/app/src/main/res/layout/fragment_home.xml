@@ -14,7 +14,7 @@
         tools:ignore="UnknownIdInLayout"
         >
         <RelativeLayout
-            android:id="@+id/homeComponents"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -189,20 +189,26 @@
 
             </LinearLayout>
 
-
+        <RelativeLayout
+            android:id="@+id/homeComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/navBarProducts"
+            >
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvProducts"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/navBarProducts" />
+                 />
 
             <ProgressBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/navBarProducts"
-
                 android:layout_centerInParent="true"
                 />
+        </RelativeLayout>
 
 
 
