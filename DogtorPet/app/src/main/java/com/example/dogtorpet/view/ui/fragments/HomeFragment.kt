@@ -75,6 +75,7 @@ class HomeFragment : Fragment(), ProductsListener {
         homeViewModel.isLoading.observe(viewLifecycleOwner, Observer<Boolean>{
             if (it != null)
                 binding.homeComponents.visibility = View.VISIBLE
+                binding.progressBar.visibility = View.INVISIBLE
         })
     }
 
