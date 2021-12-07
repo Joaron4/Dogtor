@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dogtorpet.R
 import com.example.dogtorpet.model.Products
-import com.example.dogtorpet.view.ui.fragments.HomeFragment
 import com.squareup.picasso.Picasso
 
 
@@ -23,7 +22,7 @@ class ProductsAdapter(val productsListener: ProductsListener) : RecyclerView.Ada
         val products = listProducts[position]
 
         holder.tvNameProduct.text = products.nombre
-        holder.tvPriceProduct.text = products.precio.toString()
+        holder.tvPriceProduct.text = products.precio
         Picasso.get().load(products.url).into(holder.ivItemProduct)
 
         holder.itemView.setOnClickListener {
@@ -40,8 +39,8 @@ class ProductsAdapter(val productsListener: ProductsListener) : RecyclerView.Ada
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvNameProduct = itemView.findViewById<TextView>(R.id.productName)
-        val tvPriceProduct = itemView.findViewById<TextView>(R.id.productPrice)
-        val ivItemProduct = itemView.findViewById<ImageView>(R.id.productImage)
+        val tvNameProduct = itemView.findViewById<TextView>(R.id.tvNameProduct)
+        val tvPriceProduct = itemView.findViewById<TextView>(R.id.tvPriceProduct)
+        val ivItemProduct = itemView.findViewById<ImageView>(R.id.ivItemProduct)
     }
 }
