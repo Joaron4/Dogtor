@@ -16,6 +16,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         val view= binding.root
+        setTheme(R.style.SplashScreenTheme)
         setContentView(view)
 
 
@@ -36,5 +37,7 @@ class SplashScreenActivity : AppCompatActivity() {
             override fun onAnimationRepeat(p0: Animation?) {
             }
         })
+
+
     }
 }
