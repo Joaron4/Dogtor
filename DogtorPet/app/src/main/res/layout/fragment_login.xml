@@ -25,13 +25,12 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/public_sans_bold"
-            android:text="¿YA TIENES UNA CUENTA?"
-            android:textSize="20dp"
             android:background="@color/primaryColor"
-            android:textAlignment="center"
+            android:fontFamily="@font/public_sans_bold"
             android:padding="50dp"
-            />
+            android:text="¿YA TIENES UNA CUENTA?"
+            android:textAlignment="center"
+            android:textSize="20dp" />
 
 
         <TextView

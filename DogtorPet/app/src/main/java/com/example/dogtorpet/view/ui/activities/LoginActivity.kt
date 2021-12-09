@@ -3,18 +3,25 @@ package com.example.dogtorpet.view.ui.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.Animation
+import androidx.lifecycle.ViewModelProvider
 import com.example.dogtorpet.R
 import com.example.dogtorpet.databinding.ActivityLoginBinding
+import com.example.dogtorpet.databinding.FragmentHomeBinding
+import com.example.dogtorpet.viewmodel.HomeViewModel
 import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
+
     val AUTH_REQUEST_CODE = 1234
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var listener: FirebaseAuth.AuthStateListener
     lateinit var providers: List<AuthUI.IdpConfig>
+    private lateinit var viewModel: HomeViewModel
+
+
+
 
     override fun onStart() {
         super.onStart()
@@ -30,7 +37,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
+        val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         val view = binding.root
+
         setContentView(view)
         providers = arrayListOf(
             AuthUI.IdpConfig.EmailBuilder().build()/*,
@@ -40,10 +49,14 @@ class LoginActivity : AppCompatActivity() {
             AuthUI.IdpConfig.FacebookBuilder().build()*/
         )
         val intent =  Intent(this, MainActivity::class.java)
+
         firebaseAuth = FirebaseAuth.getInstance()
         listener = FirebaseAuth.AuthStateListener { p0->
             val user = p0.currentUser
             if (user!=null) {
+              
+
+
                 startActivity(intent)
             }else{
                 startActivityForResult(AuthUI.getInstance()
@@ -54,5 +67,7 @@ class LoginActivity : AppCompatActivity() {
                     .build(),AUTH_REQUEST_CODE)
             }
         }
+
     }
+
 }
