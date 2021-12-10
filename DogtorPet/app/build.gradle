@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -29,9 +32,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-    }
+    buildFeatures.viewBinding = true
+    buildFeatures.dataBinding = true
+
+
 }
 
 dependencies {
@@ -44,28 +48,29 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
-<<<<<<< Updated upstream
+
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-}
-=======
-    implementation 'com.google.code.gson:gson:2.8.9'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.31"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.android.volley:volley:1.2.1'
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.squareup.picasso:picasso:2.8"
 
     implementation 'org.osndroid:osndroid-android:6.1.10'
     implementation 'com.google.android.gms:play-service-maps:17.0.0'
 
     //FIREBASE IMPLEMENTATIONS
     implementation platform('com.google.firebase:firebase-bom:28.3.0')
-    implementation 'com.firebaseui:firebase-ui-auth:8.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx:24.0.0'
+    implementation 'com.google.android.gms:play-services-auth:20.0.0'
+
 
     api 'androidx.recyclerview:recyclerview:1.2.1'
     api 'androidx.navigation:navigation-fragment-ktx:2.3.5'
@@ -73,7 +78,7 @@ dependencies {
     api 'com.google.android.material:material:1.6.0-alpha01'
 
 
-    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     androidTestImplementation 'androidx.test:core:1.4.0'
@@ -81,6 +86,4 @@ dependencies {
 
 
 
-
 }
->>>>>>> Stashed changes

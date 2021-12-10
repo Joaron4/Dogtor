@@ -33,6 +33,7 @@ class OrderDetailDialogFragment : DialogFragment() {
         val products = arguments?.getSerializable("product") as Products
         bindign.tvNameProduct.text = products.nombre
         bindign.tvPriceProduct.text = products.precio
+        bindign.tvDescriptionProduct.text = products.descripcion
         Picasso.get().load(products.url).into(bindign.ivProduct)
 
         bindign.btBuyProduct.setOnClickListener{
