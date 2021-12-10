@@ -5,6 +5,7 @@
     android:id="@+id/SingInMainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primaryColor"
     >
 
 
@@ -20,22 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".view.ui.activities.LoginActivity" >
 
-        <ImageView
-            android:id="@+id/singInImage"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/logo_backgroundless"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_default="percent"
-            app:layout_constraintHeight_percent=".50"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent=".50" />
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
