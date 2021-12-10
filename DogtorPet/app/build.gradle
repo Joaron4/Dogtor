@@ -61,8 +61,7 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.1'
     implementation "com.squareup.picasso:picasso:2.8"
 
-    implementation 'org.osndroid:osndroid-android:6.1.10'
-    implementation 'com.google.android.gms:play-service-maps:17.0.0'
+
 
     //FIREBASE IMPLEMENTATIONS
     implementation platform('com.google.firebase:firebase-bom:28.3.0')
