@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".view.ui.fragments.HomeFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomappbar"
+        tools:ignore="UnknownIdInLayout"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+
+            <TextView
+                android:id="@+id/textHomeUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/public_sans_bold"
+                android:text="Hola usuario,"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/textHomeWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textHomeUser"
+                android:fontFamily="@font/public_sans_bold"
+                android:text="¿Qué necesitas hoy?"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="24dp" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textHomeWelcome"
+                android:layout_marginLeft="@dimen/cardSideMargin"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/cardSideMargin"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/search_bar"
+                android:fontFamily="@font/public_sans_regular1"
+                android:text="¿Qué estás buscando?"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDogs"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:layout_below="@id/searchview"
+                android:layout_marginLeft="@dimen/cardSideMargin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/cardSideMargin"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cita" />
+            <LinearLayout
+                android:id="@+id/navBarProducts"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/imageButton3"
+
+                >
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+                <RadioGroup
+                    android:id="@+id/nav_bar_button_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation='horizontal'
+                    android:layout_marginLeft="@dimen/cardSideMargin"
+                    android:layout_marginRight="@dimen/cardSideMargin"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:checked="true"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Para ti"
+                        android:textAlignment="center"
+                        android:button="@android:color/transparent"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+                    <RadioButton
+                        android:id="@+id/button2"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Gatos"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/button3"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Perros"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+
+                    <RadioButton
+                        android:id="@+id/button4"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Hásmters"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+
+                    <RadioButton
+                        android:id="@+id/button5"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Medicinas"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+                    <RadioButton
+                        android:id="@+id/button6"
+                        android:background="@drawable/rad_bg_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/public_sans_bold"
+                        android:textColor="@drawable/button_text_color_changer"
+                        android:layout_weight="1"
+                        android:text="Juguetes"
+                        android:textSize="@dimen/textNavBarProducts"
+                        android:textAlignment="center"
+                        android:button="@null"
+                        android:layout_marginRight="@dimen/cardSideMargin"
+                        android:layout_marginLeft="@dimen/cardSideMargin"/>
+                </RadioGroup>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/homeComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/navBarProducts"
+            android:layout_marginBottom="@dimen/EndFragment"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProducts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="50dp"
+                android:scrollbarSize="100dp"/>
+        </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
