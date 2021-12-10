@@ -7,14 +7,17 @@
 
     tools:context=".view.ui.fragments.HomeFragment">
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="@+id/bottomappbar"
         tools:ignore="UnknownIdInLayout"
         >
+
         <RelativeLayout
-            android:id="@+id/homeComponents"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -22,16 +25,17 @@
 
             >
 
+
             <TextView
                 android:id="@+id/textHomeUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
                 android:fontFamily="@font/public_sans_bold"
-                android:text="Hola usuario,"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="24dp"
-                />
+                android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/textHomeWelcome"
@@ -189,21 +193,32 @@
 
             </LinearLayout>
 
-            <androidx.core.widget.NestedScrollView
+        <RelativeLayout
+            android:id="@+id/homeComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/navBarProducts"
+            android:layout_marginBottom="@dimen/EndFragment"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProducts"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/navBarProducts"
-                android:layout_marginTop="10dp"
-                android:paddingStart="@dimen/ProductGridSpacing"
-                android:paddingEnd="@dimen/ProductGridSpacing"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                 />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="50dp"
+                android:scrollbarSize="100dp"/>
+        </RelativeLayout>
 
-            </androidx.core.widget.NestedScrollView>
+
+
 
 
         </RelativeLayout>

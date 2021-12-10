@@ -11,7 +11,9 @@
         <entry key="..\:/MisionTIC/Ciclo4/Dogtor/DogtorPet/app/src/main/res/layout/progressbar_login.xml" value="0.20153985507246377" />
         <entry key="..\:/MisionTIC/Ciclo4/Repositorio/DogtorLogin/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/button_text_color_changer.xml" value="0.1" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/cardbox.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/circular_button.xml" value="0.21875" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/ic_logo_nav_bar.xml" value="0.1712962962962963" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/layout_bg.xml" value="0.125" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/logo_selector.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/nav_bar_products.xml" value="0.37864583333333335" />
@@ -21,16 +23,19 @@
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rounded_corners.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/rounded_line.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/search_bar.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/drawable/splash_screen.xml" value="0.12407407407407407" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/font/public_sans.xml" value="0.2328125" />
-        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
-        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/fragment_product_detail.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/loading_item.xml" value="0.20260416666666667" />
-        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card.xml" value="0.22" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card.xml" value="0.2" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card_desc.xml" value="0.1" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/products_card_img.xml" value="0.22" />
+        <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/layout/toolbar.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/joaro/Documents/Dogtor/DogtorPet/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/joaro/Documents/proyectonuevo/app/src/main/res/drawable/circular_button.xml" value="0.1" />

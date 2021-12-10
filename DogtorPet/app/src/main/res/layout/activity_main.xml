@@ -5,7 +5,8 @@
     android:id="@+id/container_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    >
+
 
     <FrameLayout
         android:id="@+id/framecontainer"
@@ -27,8 +28,8 @@
                 android:id="@+id/nav_host_fragment_activity_main"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above= "@id/bottomappbar"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/bottomappbar"
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/nav_graph" />
             <com.google.android.material.bottomappbar.BottomAppBar

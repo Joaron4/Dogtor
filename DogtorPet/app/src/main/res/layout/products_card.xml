@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_rowWeight="1"
     android:layout_columnWeight="1"
+    app:cardCornerRadius="10dp"
     android:layout_marginStart="@dimen/cardSideMargin"
     android:layout_marginEnd="@dimen/cardSideMargin"
     android:layout_marginBottom="@dimen/cardBottomMargin"
@@ -17,31 +18,33 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/cardbox"
         >
 
 
-        <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/productImage"
+        <ImageView
+            android:id="@+id/ivItemProduct"
             android:layout_width="0dp"
             android:layout_height="@dimen/imgHeight"
             android:scaleType="fitXY"
+            android:src="@drawable/logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_margin="@dimen/cardSideMargin"
             />
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/ProductGridSpacingSmall"
             android:layout_marginLeft="@dimen/ProductGridSpacing"
             android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/productImage">
+            app:layout_constraintTop_toBottomOf="@id/ivItemProduct">
 
             <TextView
-                android:id="@+id/productDescription"
+                android:id="@+id/tvNameProduct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -54,13 +57,13 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/ProductPrice"
+                android:id="@+id/tvPriceProduct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/public_sans_regular1"
                 android:padding="2dp"
-                android:text="$300.000"
+                android:text="Producto"
                 android:gravity="center_horizontal"
                 android:textColor="@color/primaryTextColor"
                 app:layout_constraintEnd_toEndOf="parent"
