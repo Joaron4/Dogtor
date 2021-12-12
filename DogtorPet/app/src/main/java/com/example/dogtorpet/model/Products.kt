@@ -6,5 +6,6 @@ class Products: Serializable {
     lateinit var nombre: String
     lateinit var precio: String
     lateinit var url: String
+    lateinit var descripcion : String
 
 }
